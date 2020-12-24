@@ -1,0 +1,366 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>PcBuild-comp</title>
+    <link rel="canonical" href="https://getbootstrap.com/docs/5.0/examples/checkout/">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    
+
+    <style>
+      .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        user-select: none;
+      }
+
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+      }
+
+      .container {
+         max-width: 960px;
+      } 
+    </style>
+
+    
+
+    <link href="form-validation.css" rel="stylesheet">
+  </head>
+
+
+
+  <body class="bg-light">
+
+    <!--верх-->
+
+<div class="container">
+  <main>
+    <div class="py-5 text-center">
+      <img class="d-block mx-auto mb-4" src="logo.png" alt="" width="312" height="154">
+      <h2>Сборка PC</h2>
+      <p class="lead">На этом сайте вы можите подобрать PC под выбранные характиеристики!</p>
+    </div>
+
+    <!--имя и т.д.-->
+
+    <div class="row g-3">
+      
+      <div class="col-md-4 col-lg-4 order-md-last pt-3 mt-4">
+        <form class="card p-2">
+          <footer class="text-muted text-center text-capitalize">
+              <li class="list-inline list-inline-item"><a href="https://tehno93.ru/">Наш Сайт</a></li>
+          </footer>
+          <div class="input-group">
+            <input type="text" class="form-control" placeholder="Промо Код">
+            <button type="submit" class="btn btn-secondary">Проверить</button>
+          </div>
+        </form>
+      </div>
+
+      <div class="col-md-7 col-lg-8">
+        <h4 class="mb-3">Заполнение формы</h4>
+        <form class="needs-validation" novalidate>
+          <div class="row g-3">
+            <div class="col-sm-6">
+              <label for="firstName" class="form-label">Ваше Имя</label>
+              <input type="text" class="form-control" id="firstName" placeholder="Владислав" value="" required>
+              <div class="invalid-feedback">
+                Valid first name is required.
+              </div>
+              </div>
+            </div>
+
+            <div class="col-sm-6">
+              <label for="lastName" class="form-label">Ваша Фамилия</label>
+              <input type="text" class="form-control" id="lastName" placeholder="Эдуардович" value="" required>
+              <div class="invalid-feedback">
+                Valid last name is required.
+              </div>
+            </div>
+
+    <!--Телефон и т.д.-->        
+           
+            <div class="col-12">
+              <label for="phone" class="form-label pt-4">Ваш номер телефона</label>
+              <input type="tel" class="form-control" id="phone" placeholder="8-123-123-1234">
+              <div class="invalid-feedback">
+                Please enter a valid phone number for shipping updates.
+              </div>
+            </div>
+
+            <div class="col-12">
+              <label for="address" class="form-label pt-4">Адрес</label>
+              <input type="text" class="form-control" id="address" placeholder="Город Улица Номер" required>
+              <div class="invalid-feedback">
+                Please enter your shipping address.
+              </div>
+            </div>
+      
+    <!--Сборка-->
+<div>
+<div class="mr-5">
+       <div class="h4 mt-4">Тип корпуса</div>
+        <div class="d-inline-flex p-2 bd-highlight">
+          <div class="mr-5">
+            <div class="form-check mb-2">
+              <input class="form-check-input" type="radio" name="core" id="ftower" value="T" checked>
+              <label class="form-check-label" for="ftower">
+                FULL TOWER
+              </label>
+            </div>
+            <div class="form-check mt-2">
+              <input class="form-check-input" type="radio" name="core" id="eatx" value="E">
+              <label class="form-check-label" for="eatx">
+                EATX
+            </label>
+            </div>
+          </div>
+         
+
+
+          <div class="ml-5">
+            <div class="form-check mb-2">
+              <input class="form-check-input" type="radio" name="core" id="itx" value="I">
+              <label class="form-check-label" for="itx">
+                ITX
+            </label>
+            </div>
+            
+            <div class="form-check mb-2">
+              <input class="form-check-input" type="radio" name="core" id="mtower" value="M">
+              <label class="form-check-label" for="mtower">
+                MINI TOWER
+            </label>
+            </div>
+          </div>
+        </div>
+
+
+
+<div class="h4 mt-4">Производитель ЦП</div>
+        <div class="d-inline-flex p-2 bd-highlight">
+          <div class="mr-5">
+            <div class="form-check mb-2">
+              <input class="form-check-input" type="radio" name="AI" id="amd" value="A" checked>
+              <label class="form-check-label" for="amd">
+                Red
+              </label>
+            </div>
+            <div class="form-check mt-2">
+              <input class="form-check-input" type="radio" name="AI" id="intel" value="I">
+              <label class="form-check-label" for="intel">
+                Blue
+            </label>
+            </div>
+          </div>
+        </div>
+
+
+
+
+    
+          <div class="h4 mt-4">Кол-во ядер процессора</div>
+        <div class="d-inline-flex p-2 bd-highlight">
+          <div class="mr-5">
+            <div class="form-check mb-2">
+              <input class="form-check-input" type="radio" name="exampleRadios" id="4c" value="option1" checked>
+              <label class="form-check-label" for="4c">
+                4 ядра
+              </label>
+            </div>
+            <div class="form-check mt-2">
+              <input class="form-check-input" type="radio" name="exampleRadios" id="8c" value="option2">
+              <label class="form-check-label" for="8c">
+                8 ядер
+            </label>
+            </div>
+          </div>
+         
+
+
+          <div class="ml-5">
+            <div class="form-check mb-2">
+              <input class="form-check-input" type="radio" name="exampleRadios" id="16c" value="option2">
+              <label class="form-check-label" for="16c">
+                16 ядер
+            </label>
+            </div>
+            
+            <div class="form-check mb-2">
+              <input class="form-check-input" type="radio" name="exampleRadios" id="32c" value="option2">
+              <label class="form-check-label" for="32c">
+                32 ядра
+            </label>
+            </div>
+          </div>
+        </div>
+    </div>
+
+
+</div>
+
+    <div>
+      <div class="h4 mt-4">Min тактовая частота</div>
+       <div class="d-inline-flex p-2 bd-highlight">
+         <div class="mr-5">
+           <div class="form-check mb-2">
+             <input class="form-check-input" type="radio" name="hzz" id="lowhz" value="lowhz" checked>
+             <label class="form-check-label" for="lowhz">
+               1.4 Ghz
+             </label>
+           </div>
+           <div class="form-check mt-2">
+             <input class="form-check-input" type="radio" name="hzz" id="slhz" value="E">
+             <label class="form-check-label" for="slhz">
+               2.2 Ghz
+           </label>
+           </div>
+         </div>
+        
+
+
+         <div class="ml-5">
+           <div class="form-check mb-2">
+             <input class="form-check-input" type="radio" name="hzz" id="shz" value="I">
+             <label class="form-check-label" for="shz">
+               3.8 Ghz
+           </label>
+           </div>
+           
+           <div class="form-check mb-2">
+             <input class="form-check-input" type="radio" name="hzz" id="maxhz" value="M">
+             <label class="form-check-label" for="maxhz">
+               4.4 Gnz
+           </label>
+           </div>
+         </div>
+       </div>
+
+
+
+<div class="h4 mt-4">Объём кэш - памяти 3го уровня</div>
+       <div class="d-inline-flex p-2 bd-highlight">
+         <div class="mr-4">
+           <div class="form-check mb-2">
+             <input class="form-check-input" type="radio" name="ch" id="lch" value="1mb" checked>
+             <label class="form-check-label" for="lch">
+               1 MB
+             </label>
+           </div>
+           <div class="form-check mt-2">
+             <input class="form-check-input" type="radio" name="ch" id="slch" value="2mb">
+             <label class="form-check-label" for="slch">
+               2 MB
+           </label>
+           </div>
+           <div class="form-check mb-2">
+             <input class="form-check-input" type="radio" name="ch" id="shch" value="4mb">
+             <label class="form-check-label" for="shch">
+               4 MB
+             </label>
+           </div>
+           <div class="form-check mt-2">
+             <input class="form-check-input" type="radio" name="ch" id="hch" value="8mb">
+             <label class="form-check-label" for="hch">
+               8 MB
+           </label>
+          </div>
+         </div>
+        </div>
+
+
+
+       
+         <div class="h4 mt-4">Общий обьем ОП</div>
+       <div class="d-inline-flex p-2 bd-highlight">
+         <div class="mr-5">
+           <div class="form-check mb-2">
+             <input class="form-check-input" type="radio" name="opf" id="4gb" value="gb" checked>
+             <label class="form-check-label" for="4gb">
+               4 Gb
+             </label>
+           </div>
+           <div class="form-check mt-2">
+             <input class="form-check-input" type="radio" name="opf" id="8gb" value="gb">
+             <label class="form-check-label" for="8gb">
+               8 Gb
+           </label>
+           </div>
+         </div>
+        
+
+
+         <div class="ml-5">
+           <div class="form-check mb-2">
+             <input class="form-check-input" type="radio" name="opf" id="16gb" value="gb">
+             <label class="form-check-label" for="16gb">
+               16 Gb
+           </label>
+           </div>
+           
+           <div class="form-check mb-2">
+             <input class="form-check-input" type="radio" name="opf" id="32gb" value="gb">
+             <label class="form-check-label" for="32gb">
+               32 Gb
+           </label>
+           </div>
+         </div>
+
+
+         
+       </div>
+
+       <div class="h4 mt-4">Тип ОП</div>
+       <div class="d-inline-flex p-2 bd-highlight">
+         <div class="mr-5">
+           <div class="form-check mb-2">
+             <input class="form-check-input" type="radio" name="opt" id="ddr3" value="gb" checked>
+             <label class="form-check-label" for="ddr3">
+               DDR3
+             </label>
+           </div>
+           <div class="form-check mt-2">
+             <input class="form-check-input" type="radio" name="opt" id="ddr4" value="gb">
+             <label class="form-check-label" for="ddr4">
+               DDR4
+           </label>
+           </div>
+         </div>
+        
+
+
+         <div class="ml-5">
+           <div class="form-check mb-2">
+             <input class="form-check-input" type="radio" name="opt" id="ddr5" value="gb">
+             <label class="form-check-label" for="ddr5">
+               DDR5
+           </label>
+           </div>
+         </div>
+   </div>
+
+          <hr class="my-4">
+
+          <button class="w-100 btn btn-primary btn-lg" type="submit">Отправить</button>
+
+        </form>
+      </div>
+    </div>
+
+
+
+
+  </main>
+
+</div>
+
+  </body>
+</html>
+
+
